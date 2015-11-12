@@ -4,8 +4,10 @@
 			.panel-heading
 				%h1 Sign Up
 			.panel-body
-				= simple_form_for :registration, { url: users_registrations_path } do |f|
-					= f.input :username, label: false, placeholder: 'Enter Username'
+				= simple_form_for :user, { url: users_registrations_path } do |f|
+					= f.error_notification
+					= f.simple_fields_for :profile_attributes do |p|
+						= p.input :username, label: false, placeholder: 'Enter Username'
 					= f.input :email, label: false, placeholder: 'Enter Email'
 					= f.input :password, label: false, placeholder: 'Enter Password'
 					= f.input :password_confirmation, label: false, placeholder: 'Confirm Password'

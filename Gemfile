@@ -40,6 +40,15 @@ gem "haml-rails"
 # Forms DSL
 gem 'simple_form'
 
+# Rest Client
+gem 'rest-client'
+
+# Manage env vars
+gem 'figaro'
+
+# Contact import
+gem "omnicontacts"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
