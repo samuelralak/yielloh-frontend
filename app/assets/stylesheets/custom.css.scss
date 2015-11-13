@@ -1,0 +1,71 @@
+body {
+	padding-top: 20px;
+}
+
+#flash-notice {
+	@extend .alert;
+	@extend .alert-success;
+}
+
+#flash-error, #flash-alert {
+	@extend .alert;
+	@extend .alert-danger;
+}
+
+#flash-warning {
+	@extend .alert;
+	@extend .alert-warning;
+}
+
+.signin {
+	h2 {
+		margin-top: 0;
+	}
+	form {
+		margin-bottom: 20px;
+	}
+	.glyphicon {
+		top: 0;
+	}
+}
+
+.navbar .right-buttons {
+	margin-right: 15px;
+	margin-left: 25px;
+}
+
+.color-success {
+	color: #3C763D;
+}
+
+.extra-margin-top {
+	margin-top: 40px;
+}
+
+.radio {
+	width: 100px;
+	float: left;
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #EEE;
+}
+
+#horse_profile_identification_attributes_intake_date_1i {
+	width: 100px;
+	margin-right: 10px;
+	float: left;
+}
+
+#horse_profile_identification_attributes_intake_date_2i {
+	width: 120px;
+	margin-right: 10px;
+	float: left;	
+}
+
+#horse_profile_identification_attributes_intake_date_3i {
+	width: 70px;		
+}
